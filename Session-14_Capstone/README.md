@@ -99,7 +99,9 @@ Epoch: 100 |
 
 ## Attention graph/images between text and "python-code
 
-![](https://github.com/amalmathews/Tsai_END/blob/main/Session-14_Capstone/Images/doc.pdf)
+![](https://github.com/amalmathews/Tsai_END/blob/main/Session-14_Capstone/Images/1.jpg)
+
+![](https://github.com/amalmathews/Tsai_END/blob/main/Session-14_Capstone/Images/2.jpg)
 
 ## 25 Examples
 
