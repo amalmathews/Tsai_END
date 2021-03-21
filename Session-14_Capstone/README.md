@@ -96,10 +96,15 @@ Epoch: 100 |
 
 | Test Loss: 0.110 | Test PPL:   1.116 |
 
+
+## Attention graph/images between text and "python-code
+
+![](https://github.com/amalmathews/Tsai_END/blob/main/Session-14_Capstone/Images/doc.pdf)
+
 ## 25 Examples
 
 ### Problem statement in English:
-# write a function to calculate the current in the curcit where the resistance is r and voltage is v
+write a function to calculate the current in the curcit where the resistance is r and voltage is v
 ### Ground Truth Python code:
 def cal_current(resistance:float, voltage:float)->float:
     return voltage/resistance
@@ -107,7 +112,7 @@ def cal_current(resistance:float, voltage:float)->float:
 ### English to python prediction:
 ['def', '<space>', 'cal_current', '(', 'resistance', ':', 'float', ',', '<space>', 'voltage', ':', 'float', ')', '-', '>', 'float', ':', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'return', '<space>', 'voltage', '/', 'resistance', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a python function to find the area of a circle , whose radius is given
+write a python function to find the area of a circle , whose radius is given
 ### Ground Truth Python code:
 def findarea(r):
     pi = 3.142
@@ -116,7 +121,7 @@ def findarea(r):
 ### English to python prediction:
 ['def', '<space>', 'findarea', '(', 'r', ')', ':', '<space>', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'pi', '<space>', '=', '<space>', '3', '.', '142', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'return', '<space>', 'pi', '<space>', '*', '<space>', '(', 'r', '*', 'r', ')', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a function to return the angualr veolcity based on augualr distance travelled in radian unit and time taken
+write a function to return the angualr veolcity based on augualr distance travelled in radian unit and time taken
 ### Ground Truth Python code:
 def cal_angular_velocity(angular_dist:float,time:float)->float:
     return angular_dist/time
@@ -124,7 +129,7 @@ def cal_angular_velocity(angular_dist:float,time:float)->float:
 ### English to python prediction:
 ['def', '<space>', 'cal_angular_velocity', '(', 'angular_dist', ':', 'float', ',', 'time', ':', 'float', ')', '-', '>', 'float', ':', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'return', '<space>', 'angular_dist', '/', 'time', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a function that takes in height(m ) and weight(kg ) , calculates bmi and prints the comments
+write a function that takes in height(m ) and weight(kg ) , calculates bmi and prints the comments
 ### Ground Truth Python code:
 def bmi(height: 'meters', weight: 'kgs'):
     bmi = weight/(height**2)
@@ -143,7 +148,7 @@ def bmi(height: 'meters', weight: 'kgs'):
 ### English to python prediction:
 ['def', '<space>', 'time_elsaped', '(', ')', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'return', '<space>', 'inner', '(', ')', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a program to swap first and last elements in a list
+write a program to swap first and last elements in a list
 ### Ground Truth Python code:
 my_list = [1, 2, 3, 4, 5, 6]
 my_list[0], my_list[-1] = my_list[-1], my_list[0]
@@ -151,7 +156,7 @@ my_list[0], my_list[-1] = my_list[-1], my_list[0]
 ### English to python prediction:
 ['my_list', '<space>', '=', '<space>', '[', '4', ',', '3', ',', '2', ',', '9', ',', '10', ',', '44', ',', '1', ']', '<new_line>', 'my_list', '.', 'sort', '(', 'reverse', '=', 'true', ')', '<new_line>', 'print', '(', 'f', "'", 'descending', '<space>', 'order', '<space>', 'list', ':', ',', '{', 'my_list', '}', "'", ')', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a python function that takes in two numbers and returns their hcf
+write a python function that takes in two numbers and returns their hcf
 ### Ground Truth Python code:
 def hcf(num1, num2):
     smaller = num1 if num1 < num2 else num2
@@ -163,7 +168,7 @@ def hcf(num1, num2):
 ### English to python prediction:
 ['def', '<space>', 'hcf', '(', 'x', ',', '<space>', 'y', ')', ':', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'if', '<space>', 'x', '<space>', '>', '<space>', 'y', ':', '<new_line>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', 'smaller', '<space>', '=', '<space>', 'y', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'else', ':', '<new_line>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', 'smaller', '<space>', '=', '<space>', 'x', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'for', '<space>', 'i', '<space>', 'in', '<space>', 'range', '(', '1', ',', '<space>', 'smaller', '+', '1', ')', ':', '<new_line>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', 'if', '(', '(', 'x', '<space>', '%', '<space>', 'i', '<space>', '=', '=', '<space>', '0', ')', '<space>', 'and', '<space>', '(', 'y', '<space>', '%', '<space>', 'i', '<space>', '=', '=', '<space>', '0', ')', ')', ':', '<new_line>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', 'hcf', '<space>', '=', '<space>', 'i', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'return', '<space>', 'hcf', '<new_line>', 'num1', '<space>', '=', '<space>', '54', '<space>', '<new_line>', 'num2', '<space>', '=', '<space>', '24', '<new_line>', 'print', '(', "'", 'the', '<space>', 'l', '.', 'c', '.', '<space>', 'is', "'", ',', '<space>', 'num2', ',', '<space>', 'compute_hcf', '(', 'num1', ',', '<space>', 'num2', ')', ')', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a function to calculate the total capacitance of capacitors in parallel in a given list
+write a function to calculate the total capacitance of capacitors in parallel in a given list
 ### Ground Truth Python code:
 def cal_total_cap_in_parallel(cap_list:list)->float:
     return sum(cap_list)
@@ -171,7 +176,7 @@ def cal_total_cap_in_parallel(cap_list:list)->float:
 ### English to python prediction:
 ['def', '<space>', 'all_equal', '(', 'iterable', ')', ':', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'from', '<space>', 'itertools', '<space>', 'import', '<space>', 'groupby', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'return', '<space>', 'next', '(', 'g', ',', '<space>', 'none', ')', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a function to calculate and return electricity bill . units used are given . price per unit is fixed and is increased after 750 units .
+write a function to calculate and return electricity bill . units used are given . price per unit is fixed and is increased after 750 units .
 ### Ground Truth Python code:
 def calc_elect_bill(units):
     if units > 0:
@@ -185,7 +190,7 @@ def calc_elect_bill(units):
 ### English to python prediction:
 ['def', '<space>', 'time_elsaped', '(', ')', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'def', '<space>', 'inner', '(', ')', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'nonlocal', '<space>', '<new_line>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', 'return', '<space>', 'inner', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'inner', '<new_line>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', 'nonlocal', '<space>', 'perf_counter', '<new_line>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', 'return', '<space>', 'f', "'", 'outer', '<space>', 'between', '<space>', '{', 'fn', '.', '__name__', '}', '<space>', 'and', '<space>', '{', 'dt', '}', '<space>', 'inner', '(', ')', '<new_line>', '<space>', '<space>', '<space>', '<space>', '<space>', 'inner', '(', ')', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'print', '(', 'f', "'", 'outer', '<space>', 'function', '<space>', 'x', '<space>', 'is', '<space>', '{', 'fn', '.', '__name__', '}', "'", ')', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'inner', '(', ')', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'print', '(', 'f', "'", 'outer', '<space>', 'inner', ':', '{', 'fn', '(', ')', '}', '<space>', '{', 'outer', '(', ')', '<new_line>', '<space>', '<space>', 'inner', '(', ')', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a python program to create multiple list
+write a python program to create multiple list
 ### Ground Truth Python code:
 obj = {}
 for i in range(1, 11):
@@ -195,7 +200,7 @@ print(f'create multiple list:{obj}')
 ### English to python prediction:
 ['my_list', '<space>', '=', '<space>', '[', '1', ',', '<space>', '2', ',', '<space>', '3', ',', '<space>', '4', ',', '<space>', '5', ',', '<space>', '6', ',', '<space>', '7', ',', '<space>', '8', ',', '<space>', '9', ',', '<space>', '10', ']', '<new_line>', 'print', '(', 'my_list', '[', ':', '5', ']', ')', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a python function that returns the input list sorted in ascending order
+write a python function that returns the input list sorted in ascending order
 ### Ground Truth Python code:
 def sort_ascending(list_to_be_sorted):
     return sorted(list_to_be_sorted)
@@ -203,7 +208,7 @@ def sort_ascending(list_to_be_sorted):
 ### English to python prediction:
 ['def', '<space>', 'sort_ascending', '(', 'list_to_be_sorted', ')', ':', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'return', '<space>', 'sorted', '(', 'list_to_be_sorted', ')', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a python function shifts and scales all numbers in the given list by the given mean and standard deviation
+write a python function shifts and scales all numbers in the given list by the given mean and standard deviation
 ### Ground Truth Python code:
 def shift_and_scale(list_of_nums, mean, std):
     return [ (x-mean) / std for x in list_of_nums ]
@@ -211,7 +216,7 @@ def shift_and_scale(list_of_nums, mean, std):
 ### English to python prediction:
 ['def', '<space>', 'get_weighted_average', '(', 'numbers', ',', '<space>', 'weightage', ')', ':', '<new_line>', '<space>', '<space>', '<space>', 'return', '<space>', 'sum', '(', 'x', '<space>', '*', '<space>', 'y', '<space>', 'for', '<space>', 'x', ',', '<space>', 'y', '<space>', 'in', '<space>', 'zip', '(', 'numbers', ',', '<space>', 'weightage', ')', ')', '<space>', '/', '<space>', 'sum', '(', 'weightage', ')', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a python program to replace blank space to 1
+write a python program to replace blank space to 1
 ### Ground Truth Python code:
 my_string = 'balaji'
 k = [print(i) for i in my_string if i not in 'aeiou']
@@ -220,7 +225,7 @@ print('not a vowel',k)
 ### English to python prediction:
 ['word', '<space>', '=', '<space>', "'", 'hello', '<space>', 'world', "'", '<new_line>', 'letter', '=', 'word', '[', '0', ']', '<new_line>', 'print', '(', 'f', "'", 'first', '<space>', 'charecter', '<space>', 'in', '<space>', 'string', ':', '{', 'letter', '}', "'", ')', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a python program to print only digit or only apha charac in a given list
+write a python program to print only digit or only apha charac in a given list
 ### Ground Truth Python code:
 l=['good', 'oh!', 'excellent!', '#450']
 print([n for n in l if n.isalpha() or n.isdigit()])
@@ -228,7 +233,7 @@ print([n for n in l if n.isalpha() or n.isdigit()])
 ### English to python prediction:
 ['l', '<space>', '=', '<space>', '[', '1', ',', '<space>', '2', ',', '<space>', '3', ',', '<space>', '4', ',', '<space>', '5', ',', '<space>', '6', ',', '<space>', '7', ',', '<space>', '8', ',', '<space>', '9', ']', '<space>', '<new_line>', 'n', '<space>', '=', '<space>', '4', '<new_line>', 'x', '<space>', '=', '<space>', '[', 'l', '[', 'i', ':', 'i', '<space>', '+', '<space>', 'n', ']', '<space>', 'for', '<space>', 'i', '<space>', 'in', '<space>', 'range', '(', '0', ',', '<space>', 'len', '(', 'l', ')', ')', ']', '<space>', '<new_line>', 'print', '(', 'x', ')', '<space>', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a python function to count how many times the predicate is true
+write a python function to count how many times the predicate is true
 ### Ground Truth Python code:
 def quantify(iterable, pred=bool):
     return sum(map(pred, iterable))
@@ -236,7 +241,7 @@ def quantify(iterable, pred=bool):
 ### English to python prediction:
 ['def', '<space>', 'countx', '(', 'lst', ',', '<space>', 'x', ')', ':', '<space>', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'return', '<space>', 'lst', '.', 'count', '(', 'x', ')', '<new_line>', '\t', '<new_line>', '\t', '<new_line>', '\t', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a python function that returns the input list sorted in ascending order
+write a python function that returns the input list sorted in ascending order
 ### Ground Truth Python code:
 def sort_ascending(list_to_be_sorted):
     return sorted(list_to_be_sorted)
@@ -244,7 +249,7 @@ def sort_ascending(list_to_be_sorted):
 ### English to python prediction:
 ['def', '<space>', 'sort_ascending', '(', 'list_to_be_sorted', ')', ':', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'return', '<space>', 'sorted', '(', 'list_to_be_sorted', ')', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a python function to return dictionary of two lists using zip
+write a python function to return dictionary of two lists using zip
 ### Ground Truth Python code:
 def dict_using_comp(list1, list2):
   dict_using_comp = {key:value for (key, value) in zip(list1, list2)}
@@ -253,14 +258,14 @@ def dict_using_comp(list1, list2):
 ### English to python prediction:
 ['def', '<space>', 'merge_lists', '(', 'l1', ':', 'list', ',', '<space>', 'l2', ':', 'list', ')', ':', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'return', '<space>', 'list', '(', 'zip', '(', 'l1', ',', 'l2', ')', ')', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a python program to replace blank space to 1
+write a python program to replace blank space to 1
 ### Ground Truth Python code:
 print([i+j for i in 'abc' for j in 'def'])
 
 ### English to python prediction:
 ['word', '<space>', '=', '<space>', "'", 'hello', '<space>', 'world', "'", '<new_line>', 'letter', '=', 'word', '[', '0', ']', '<new_line>', 'print', '(', 'f', "'", 'first', '<space>', 'charecter', '<space>', 'in', '<space>', 'string', ':', '{', 'letter', '}', "'", ')', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a python function to return dictionary of two lists using zip
+write a python function to return dictionary of two lists using zip
 ### Ground Truth Python code:
 def dict_using_comp(list1, list2):
   dict_using_comp = {key:value for (key, value) in zip(list1, list2)}
@@ -269,7 +274,7 @@ def dict_using_comp(list1, list2):
 ### English to python prediction:
 ['def', '<space>', 'merge_lists', '(', 'l1', ':', 'list', ',', '<space>', 'l2', ':', 'list', ')', ':', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'return', '<space>', 'list', '(', 'zip', '(', 'l1', ',', 'l2', ')', ')', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a python program to check name exists in given list
+write a python program to check name exists in given list
 ### Ground Truth Python code:
 names1 = ['amir', 'bala', 'chales']
 for n in names1:
@@ -282,7 +287,7 @@ for n in names1:
 ### English to python prediction:
 ['my_list', '<space>', '=', '<space>', '[', '4', ',', '3', ',', '2', ',', '9', ',', '10', ',', '44', ',', '1', ']', '<new_line>', 'my_list', '.', 'sort', '(', 'reverse', '=', 'true', ')', '<new_line>', 'print', '(', 'f', "'", 'descending', '<space>', 'order', '<space>', 'list', ':', ',', '{', 'my_list', '}', "'", ')', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a function to calculate the electrostatic force between two charged particles with charge q1 and q2 at a distance d apart
+write a function to calculate the electrostatic force between two charged particles with charge q1 and q2 at a distance d apart
 ### Ground Truth Python code:
 def cal_electrostatic_force(q1,q2,d):
     k = 9*(10**9)
@@ -291,7 +296,7 @@ def cal_electrostatic_force(q1,q2,d):
 ### English to python prediction:
 ['def', '<space>', 'bit_div', '(', 'n', ',', '<space>', 'shift', ')', ':', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'return', '<space>', 'n', '<space>', '>', '>', '<space>', 'shift', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a python program to explain the generator
+write a python program to explain the generator
 ### Ground Truth Python code:
 def f11(x):
     yield x+1
@@ -301,7 +306,7 @@ print(next(g))
 ### English to python prediction:
 ['print', '(', "'", 'abcdefcdghcd', "'", '.', 'split', '(', "'", 'cd', "'", ',', '<space>', '2', ')', ')', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a function to calculate compound interest , given p , r , t
+write a function to calculate compound interest , given p , r , t
 ### Ground Truth Python code:
 def comp_int(p, r, t):
     amount = p * (1 + (r/100))**t
@@ -311,7 +316,7 @@ def comp_int(p, r, t):
 ### English to python prediction:
 ['def', '<space>', 'comp_int', '(', 'p', ',', '<space>', 'r', ',', '<space>', 't', ')', ':', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'amount', '<space>', '=', '<space>', 'p', '<space>', '*', '<space>', '(', '1', '<space>', '+', '<space>', '(', 'r', '/', '100', ')', ')', '*', '*', 't', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'interest', '<space>', '=', '<space>', 'amount', '<space>', '-', '<space>', 'p', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'return', '<space>', 'interest', '<new_line>', '<eos>']
 ### Problem statement in English:
-# python program to implement stooge sort
+python program to implement stooge sort
 ### Ground Truth Python code:
 def stoogesort(arr, l, h):
     if l >= h:
@@ -334,7 +339,7 @@ for i in range(0, n):
 ### English to python prediction:
 ['def', '<space>', 'stoogesort', '(', 'arr', ',', '<space>', 'l', ',', '<space>', 'h', ')', ':', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'if', '<space>', 'l', '<space>', '>', '=', '<space>', 'h', ':', '<new_line>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', 'return', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'if', '<space>', 'arr', '[', 'l', ']', '<space>', '>', '<space>', 'arr', '[', 'h', ']', ':', '<new_line>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', 't', '<space>', '=', '<space>', 'arr', '[', 'l', ']', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'else', ':', '<new_line>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', 't', '<space>', '=', '<space>', 'arr', '[', 'l', ']', '<new_line>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', 'for', '<space>', 'i', '<space>', 'in', '<space>', 'range', '(', '0', ',', '<space>', 'len', '(', 'arr', ')', ')', ':', '<new_line>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', 'if', '<space>', 'arr', '[', 'i', ']', '<space>', '>', '<space>', 'max', ':', '<new_line>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', 't', '<space>', '=', '<space>', 'arr', '[', 'i', ']', ',', '<space>', 'arr', '[', 'i', ']', '<new_line>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', 'break', '<new_line>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', 'if', '<space>', 'arr', '[', 'i', ']', '<space>', '>', '<space>', 'arr', '[', 'l', ']', ':', '<new_line>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', '<space>', 'arr', '[', 'l', ']', ',', '<space>', 'arr', '[', 'l', ']', '<space>', '+', '<space>', '=', '<space>', '1', '<new_line>', '<space>', '<space>', '<space>', '<space>', 'return', '<space>', 'arr', '<new_line>', 'arr', '<space>', '[', '34', ',', '<space>', '[', '2', ',', '<space>', '3', ',', '<space>', '5', ',', '<space>', '1', ']', '<new_line>', 'print', '(', "'", 'sorted', '<space>', 'array', '<space>', 'is', '<space>', 'not', '<space>', 'a', '<space>', ':', '<space>', "'", ',', '<space>', 'str', '(', 'arr', ')', ')', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a python program to sort tuple values
+write a python program to sort tuple values
 ### Ground Truth Python code:
 a=(2,3,1,5)
 tuple_sorted = sorted(a)
@@ -343,7 +348,7 @@ print(tuple(tuple_sorted))
 ### English to python prediction:
 ['print', '(', "'", 'the', '<space>', 'original', '<space>', 'dictionary', '<space>', 'is', '<space>', ':', '<space>', "'", '<space>', '+', '<space>', 'str', '(', 'test_dict', ')', ')', '<space>', '<new_line>', '<space>', '<space>', '<new_line>', '<eos>']
 ### Problem statement in English:
-# write a python function that would filter a list of dictionaries where a specified key equals given value , list_of_dictionaries , key and value are inputs to this function .
+write a python function that would filter a list of dictionaries where a specified key equals given value , list_of_dictionaries , key and value are inputs to this function .
 ### Ground Truth Python code:
 def filter_with_key_value(list_of_dicts, key, value):
     return list( filter( lambda x: x.get(key) == value, list_of_dicts ) )
